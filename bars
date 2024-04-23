@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+  position: relative;
+  height: 100vh;
+ border: 2px solid green;
+ overflow: hidden;
+ padding-right: 500px;
+}
+
+@keyframes ball {
+  0%   {bottom: 100px;}
+  25%  {bottom: 150px;}
+  50%  { bottom: 190px;}
+  /* 100% {bottom: 300px;} */
+}
+#ball{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(26, 141, 229);
+  position: absolute;
+  bottom: 50px;
+  animation:ball 2s linear  infinite alternate;
+  
+}
+#ba{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(229, 26, 26);
+  position: absolute;
+  bottom: 50px;
+  animation:ba  2s linear  infinite alternate;
+ 
+}
+
+#bal{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(17, 216, 73);
+  position: absolute;
+  bottom: 100px;
+  animation:bal 2s linear  infinite alternate;
+  
+  margin-left: 400px;
+
+}
+
+@keyframes bal {
+  0%   {bottom: 100px;}
+  25%  {bottom: 150px;}
+  50%  { bottom: 190px;}
+  100% {bottom: 300px;}
+}
+@keyframes ba {
+  0%   {bottom: 100px;}
+  25%  {bottom: 150px;}
+  /* 50%  { bottom: 190px;} */
+  /* 100% {bottom: 300px;} */
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Animation</h1>
+
+
+
+<div id="ball" style="margin-left: 200px;"></div>
+<div id="ba"></div>
+<div id="bal"></div>
+
+
+</body>
+</html>
+
+
